@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hobby's van Fabio Cretella — fitness, gaming, gitaar en Oscar.">
+    <meta name="author" content="Fabio Cretella">
+    <title>Fabio Cretella | Hobby's</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="vendor/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Eigen stijlbestand -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
+</head>
+<body>
+
+<!-- ===== NAVIGATIE ===== -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="FC Logo" style="height:38px;"></a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+                aria-controls="navbarMenu" aria-expanded="false" aria-label="Navigatie uitklappen">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+                <li class="nav-item"><a class="nav-link" href="index.html">Over mij</a></li>
+                <li class="nav-item"><a class="nav-link" href="ervaring.html">Ervaring</a></li>
+                <li class="nav-item"><a class="nav-link active" href="hobbys.html">Hobby's</a></li>
+                <li class="nav-item"><a class="nav-link" href="curriculumVitae.html">CV</a></li>
+                <li class="nav-item ms-lg-2"><a class="btn btn-accent" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ===== PAGINA HEADER ===== -->
+<div class="container">
+    <div class="pagina-header">
+        <p class="sectie-label">Buiten het scherm</p>
+        <h1>Mijn hobby's</h1>
+        <p>
+            Net zoals de meeste programmeurs heb ik hobby's die ook waardevolle vaardigheden bijbrengen.
+            Elke hobby heeft me iets geleerd dat ik rechtstreeks kan toepassen in mijn opleiding en toekomstige carrière.
+        </p>
+    </div>
+</div>
+
+<!-- ===== HOOFDINHOUD ===== -->
+<main class="container pb-5">
+
+    <!-- ===== BOOTSTRAP CAROUSEL (6 afbeeldingen, 1 zichtbaar) ===== -->
+    <div class="row mb-5">
+        <div class="col-12">
+            <p class="sectie-label mb-2">Beeldgalerij</p>
+            <h2 class="sectie-titel mb-4">Foto's</h2>
+
+            <div id="hobbyCarousel" class="carousel slide hobby-carousel" data-bs-ride="carousel">
+
+                <!-- Indicatoren -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#hobbyCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#hobbyCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#hobbyCarousel" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#hobbyCarousel" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#hobbyCarousel" data-bs-slide-to="4"></button>
+                    <button type="button" data-bs-target="#hobbyCarousel" data-bs-slide-to="5"></button>
+                </div>
+
+                <!-- Slides (6 stuks, telkens 1 zichtbaar) -->
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <img src="img/fitness.jpg" alt="Fitness — mijn dagelijkse routine"
+                             onerror="this.style.cssText='height:480px;background:linear-gradient(135deg,#0d0d2a,#7c6af7);display:block;width:100%;';this.src='';">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Fitness</h5>
+                            <p>Mijn dagelijkse routine om gefocust en energiek te blijven.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="img/gaming.jpg" alt="Gaming — teamwork en strategie"
+                             onerror="this.style.cssText='height:480px;background:linear-gradient(135deg,#0a1a0a,#02C39A);display:block;width:100%;';this.src='';">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Gaming</h5>
+                            <p>Snel beslissingen nemen, strategie en communicatie met teamleden.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="img/gitaar.jpg" alt="Gitaar — creativiteit en geduld"
+                             onerror="this.style.cssText='height:480px;background:linear-gradient(135deg,#1a0a00,#f96167);display:block;width:100%;';this.src='';">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Gitaar spelen</h5>
+                            <p>Creativiteit, geduld en doorzettingsvermogen — net als bij programmeren.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="img/fotovanoscar.jpeg" alt="Oscar — mijn hond"
+                             onerror="this.style.cssText='height:480px;background:linear-gradient(135deg,#1a100a,#B85042);display:block;width:100%;';this.src='';">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Oscar 🐶</h5>
+                            <p>Mijn beste vriend — hij leert me elke dag iets over geduld en liefde.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="img/escaperoom.jpg" alt="Sporten in de gym"
+                             style="filter: hue-rotate(40deg) brightness(0.7);"
+                             onerror="this.style.cssText='height:480px;background:linear-gradient(135deg,#12103a,#4b3bba);display:block;width:100%;';this.src='';">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Escaperooms</h5>
+                            <p>Patronen herkennen en samenwerken om tot de oplossing te geraken.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="img/muurklimmen.jpg" alt="Gamen op hoog niveau"
+                             onerror="this.style.cssText='height:480px;background:linear-gradient(135deg,#001a1a,#028090);display:block;width:100%;';this.src='';">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Muurklimmen</h5>
+                            <p>Kalm blijven wanneer het moeilijk wordt is een vaardigheid voor het leven.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Navigatieknoppen -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#hobbyCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Vorige</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#hobbyCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Volgende</span>
+                </button>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== EXTRA UITLEG HOBBY KAARTEN ===== -->
+    <div class="row mb-4">
+        <div class="col">
+            <p class="sectie-label">Meer uitleg</p>
+            <h2 class="sectie-titel">Wat ik doe & waarom</h2>
+            <p class="sectie-intro">
+                Elk van mijn hobby's heeft me waardevolle vaardigheden bijgebracht die ik direct kan toepassen
+                in mijn opleiding en toekomstige carrière in IT.
+            </p>
+        </div>
+    </div>
+
+    <div class="row g-4">
+
+        <!-- Fitness -->
+        <div class="col-md-6 col-lg-3">
+            <div class="hobby-kaart">
+                <img src="img/fitness.jpg" alt="Fitness"
+                     onerror="this.style.cssText='height:180px;background:linear-gradient(135deg,#0d0d2a,#7c6af7);display:block;width:100%;';this.src='';">
+                <div class="hobby-kaart-inhoud">
+                    <h3><i class="bi bi-lightning-charge me-2" style="color:var(--kleur-accent);"></i>Fitness</h3>
+                    <p>
+                        Sporten leert me doelen stellen, vooruitgang opvolgen en mijn aanpak bijsturen
+                        — exact dezelfde mindset die ik gebruik bij het debuggen van code.
+                    </p>
+                    <span class="hobby-competentie">→ Discipline & doorzettingsvermogen</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gaming -->
+        <div class="col-md-6 col-lg-3">
+            <div class="hobby-kaart">
+                <img src="img/gaming.jpg" alt="Gaming"
+                     onerror="this.style.cssText='height:180px;background:linear-gradient(135deg,#0a1a0a,#02C39A);display:block;width:100%;';this.src='';">
+                <div class="hobby-kaart-inhoud">
+                    <h3><i class="bi bi-controller me-2" style="color:var(--kleur-accent);"></i>Gaming</h3>
+                    <p>
+                        Snel beslissingen nemen, strategisch nadenken en communiceren met teamleden —
+                        vaardigheden die in een professionele IT-omgeving minstens even belangrijk zijn.
+                    </p>
+                    <span class="hobby-competentie">→ Teamwork & strategie</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gitaar -->
+        <div class="col-md-6 col-lg-3">
+            <div class="hobby-kaart">
+                <img src="img/gitaar.jpg" alt="Gitaar spelen"
+                     onerror="this.style.cssText='height:180px;background:linear-gradient(135deg,#1a0a00,#f96167);display:block;width:100%;';this.src='';">
+                <div class="hobby-kaart-inhoud">
+                    <h3><i class="bi bi-music-note-beamed me-2" style="color:var(--kleur-accent);"></i>Gitaar</h3>
+                    <p>
+                        Een nieuw stuk leren gaat niet in één dag — je oefent keer op keer.
+                        Dat principe past perfect bij programmeren: herhalen, fouten maken en bijsturen.
+                    </p>
+                    <span class="hobby-competentie">→ Creativiteit & geduld</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Oscar -->
+        <div class="col-md-6 col-lg-3">
+            <div class="hobby-kaart">
+                <img src="img/fotovanoscar.jpeg" alt="Oscar"
+                     onerror="this.style.cssText='height:180px;background:linear-gradient(135deg,#1a100a,#B85042);display:block;width:100%;';this.src='';">
+                <div class="hobby-kaart-inhoud">
+                    <h3><i class="bi bi-heart me-2" style="color:var(--kleur-accent);"></i>Oscar 🐶</h3>
+                    <p>
+                        Oscar is bijna 15 jaar oud en verlamd in zijn achterpoten. Voor hem zorgen
+                        vereist geduld en verantwoordelijkheidszin — dat geeft je een ander perspectief.
+                        <a href="https://files.fm/u/atdwmttc98" target="_blank" style="color:var(--kleur-accent);">Bekijk Oscar hier!</a>
+                    </p>
+                    <span class="hobby-competentie">→ Passie ❤️</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <p class="footer-naam">Fabio Cretella</p>
+                <p class="footer-ondertitel">.NET Developer · Graduaat Programmeren</p>
+            </div>
+            <div class="col-md-2 offset-md-2">
+                <h6>Navigatie</h6>
+                <a href="index.html">Over mij</a>
+                <a href="ervaring.html">Ervaring</a>
+                <a href="hobbys.html">Hobby's</a>
+                <a href="curriculumVitae.html">CV</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="col-md-2">
+                <h6>Gegevens</h6>
+                <p style="font-size:0.85rem;">📍 Herentals, België</p>
+                <p style="font-size:0.82rem;">r0761517@student.thomasmore.be</p>
+            </div>
+            <div class="col-md-2">
+                <h6>Volg mij</h6>
+                <div class="d-flex gap-2 flex-wrap">
+                    <a href="https://github.com/FabioCretella123" target="_blank" class="social-icoon-link"><i class="bi bi-github"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank" class="social-icoon-link"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://www.instagram.com" target="_blank" class="social-icoon-link"><i class="bi bi-instagram"></i></a>
+                    <a href="https://twitter.com" target="_blank" class="social-icoon-link"><i class="bi bi-twitter-x"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center">
+            <p>&copy; 2025 Fabio Cretella — Graduaat Programmeren, Thomas More Hogeschool Lier</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="vendor/bootstrap.bundle.min.js"></script>
+</body>
+</html>

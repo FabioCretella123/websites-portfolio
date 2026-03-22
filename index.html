@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio van Fabio Cretella — .NET Developer & Graduaat Programmeren student aan Thomas More Hogeschool, Lier.">
+    <meta name="author" content="Fabio Cretella">
+    <title>Fabio Cretella | Portfolio</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="vendor/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Eigen stijlbestand -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
+</head>
+<body>
+
+<!-- ===== NAVIGATIE ===== -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="FC Logo" style="height:38px;"></a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+                aria-controls="navbarMenu" aria-expanded="false" aria-label="Navigatie uitklappen">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Over mij</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ervaring.html">Ervaring</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="hobbys.html">Hobby's</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="curriculumVitae.html">CV</a>
+                </li>
+                <li class="nav-item ms-lg-2">
+                    <a class="btn btn-accent" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ===== HERO SECTIE (Jumbotron) ===== -->
+<section class="hero-sectie">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-7 order-lg-1 order-2">
+                <p class="hero-label">Welkom op mijn portfolio</p>
+                <h1 class="hero-titel">
+                    Hallo, ik ben<br>
+                    <span>Fabio Cretella</span>
+                </h1>
+                <p class="hero-ondertitel">
+                    .NET Developer in opleiding aan Thomas More Hogeschool, Lier.
+                    Ik bouw graag dingen die zowel mooi als functioneel zijn.
+                </p>
+                <div class="d-flex flex-wrap gap-3">
+                    <a href="contact.html" class="btn btn-accent">
+                        <i class="bi bi-envelope me-2"></i>Neem contact op
+                    </a>
+                    <a href="ervaring.html" class="btn btn-omlijnd">
+                        Bekijk mijn werk <i class="bi bi-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-5 order-lg-2 order-1 text-center">
+                <img src="img/fotovanmij.jpeg" alt="Fabio Cretella" class="hero-foto">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== VAARDIGHEDEN ===== -->
+<section class="sectie" style="padding-top: 60px; padding-bottom: 40px; background-color: var(--kleur-oppervlak);">
+    <div class="container text-center">
+        <p class="sectie-label">Technologieën</p>
+        <div class="d-flex flex-wrap justify-content-center gap-3 mt-3">
+            <span class="label-tag" style="font-size: 0.85rem; padding: 6px 16px;">HTML5</span>
+            <span class="label-tag" style="font-size: 0.85rem; padding: 6px 16px;">CSS3</span>
+            <span class="label-tag" style="font-size: 0.85rem; padding: 6px 16px;">Bootstrap 5</span>
+            <span class="label-tag" style="font-size: 0.85rem; padding: 6px 16px;">.NET / C#</span>
+            <span class="label-tag" style="font-size: 0.85rem; padding: 6px 16px;">Git & GitHub</span>
+        </div>
+    </div>
+</section>
+
+<!-- ===== 3 KAARTEN ===== -->
+<section class="sectie">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-lg-8">
+                <p class="sectie-label">Verkennen</p>
+                <h2 class="sectie-titel">Bekijk mijn pagina's</h2>
+                <p class="sectie-intro">Ga verder en ontdek mijn ervaring, hobby's en mijn volledige CV.</p>
+            </div>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Kaart 1: Ervaring -->
+            <div class="col-md-4">
+                <a href="ervaring.html" class="text-decoration-none">
+                    <div class="project-kaart">
+                        <img src="img/coding.jpg"
+                             alt="Ervaring"
+                             onerror="this.style.height='200px';this.style.background='linear-gradient(135deg,#1a1245,#7c6af7)';this.removeAttribute('onerror')">
+                        <div class="project-kaart-inhoud">
+                            <p class="project-nummer">Pagina 01</p>
+                            <h3>Ervaring</h3>
+                            <p>Ontdek de projecten waaraan ik heb gewerkt, van webdevelopment tot toekomstige C# projecten.</p>
+                            <span class="label-tag">HTML5</span>
+                            <span class="label-tag">CSS3</span>
+                            <span class="label-tag">.NET</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Kaart 2: Hobby's -->
+            <div class="col-md-4">
+                <a href="hobbys.html" class="text-decoration-none">
+                    <div class="project-kaart">
+                        <img src="img/fitness.jpg"
+                             alt="Hobby's"
+                             onerror="this.style.height='200px';this.style.background='linear-gradient(135deg,#12302a,#02C39A)';this.removeAttribute('onerror')">
+                        <div class="project-kaart-inhoud">
+                            <p class="project-nummer">Pagina 02</p>
+                            <h3>Hobby's</h3>
+                            <p>Leer me beter kennen via mijn passies: fitness, gaming, gitaar spelen en mijn hond Oscar.</p>
+                            <span class="label-tag">Fitness</span>
+                            <span class="label-tag">Gaming</span>
+                            <span class="label-tag">Muziek</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Kaart 3: CV -->
+            <div class="col-md-4">
+                <a href="curriculumVitae.html" class="text-decoration-none">
+                    <div class="project-kaart">
+                        <img src="img/afbeeldingcv.jpg"
+                             alt="CV"
+                             onerror="this.style.height='200px';this.style.background='linear-gradient(135deg,#2a1200,#f96167)';this.removeAttribute('onerror')">
+                        <div class="project-kaart-inhoud">
+                            <p class="project-nummer">Pagina 03</p>
+                            <h3>Curriculum Vitae</h3>
+                            <p>Mijn opleiding, werkervaring, taalkennis en technische vaardigheden overzichtelijk op een rij.</p>
+                            <span class="label-tag">Opleiding</span>
+                            <span class="label-tag">Talen</span>
+                            <span class="label-tag">Skills</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ===== OVER MIJ ===== -->
+<section class="sectie" style="background-color: var(--kleur-oppervlak); padding-top: 70px; padding-bottom: 70px;">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <p class="sectie-label">Over mij</p>
+                <h2 class="sectie-titel">Wie ben ik?</h2>
+                <p style="color: var(--kleur-tekst-zacht); margin-bottom: 1rem;">
+                    Ik ben een student Graduaat Programmeren aan Thomas More Hogeschool in Lier en
+                    maak de overstap vanuit de bewakingssector naar de IT-wereld. Ik ben iemand die
+                    graag problemen oplost en altijd op zoek is naar manieren om beter te worden.
+                </p>
+                <p style="color: var(--kleur-tekst-zacht); margin-bottom: 1.8rem;">
+                    Naast programmeren hou ik me bezig met gitaar spelen en fitness. In de weekends
+                    werk ik als bewakingsagent. Wil je meer weten? Neem een kijkje bij mijn
+                    hobby's en ervaring!
+                </p>
+                <div class="d-flex gap-3">
+                    <a href="hobbys.html" class="btn btn-omlijnd">Hobby's</a>
+                    <a href="ervaring.html" class="btn btn-omlijnd">Ervaring</a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="row g-3">
+                    <div class="col-6">
+                        <div style="background:var(--kleur-kaart);border:1px solid var(--kleur-rand);border-radius:12px;padding:1.5rem;text-align:center;">
+                            <div style="font-size:2rem;font-weight:800;color:var(--kleur-accent);">4+</div>
+                            <div style="font-size:0.82rem;color:var(--kleur-tekst-zacht);margin-top:4px;">Talen gesproken</div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div style="background:var(--kleur-kaart);border:1px solid var(--kleur-rand);border-radius:12px;padding:1.5rem;text-align:center;">
+                            <div style="font-size:2rem;font-weight:800;color:var(--kleur-accent);">2j</div>
+                            <div style="font-size:0.82rem;color:var(--kleur-tekst-zacht);margin-top:4px;">Graduaat opleiding</div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div style="background:var(--kleur-kaart);border:1px solid var(--kleur-rand);border-radius:12px;padding:1.5rem;text-align:center;">
+                            <div style="font-size:2rem;font-weight:800;color:var(--kleur-accent);">5+</div>
+                            <div style="font-size:0.82rem;color:var(--kleur-tekst-zacht);margin-top:4px;">Tools & frameworks</div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div style="background:var(--kleur-kaart);border:1px solid var(--kleur-rand);border-radius:12px;padding:1.5rem;text-align:center;">
+                            <div style="font-size:2rem;font-weight:800;color:var(--kleur-accent);">100%</div>
+                            <div style="font-size:0.82rem;color:var(--kleur-tekst-zacht);margin-top:4px;">Motivatie</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <div class="container">
+        <div class="row g-4">
+            <!-- Kolom 1: Naam & beschrijving -->
+            <div class="col-md-4">
+                <p class="footer-naam">Fabio Cretella</p>
+                <p class="footer-ondertitel">.NET Developer · Graduaat Programmeren</p>
+                <p style="font-size:0.82rem;color:var(--kleur-tekst-zacht);margin-top:0.8rem;">
+                    Student aan Thomas More Hogeschool, Lier. In opleiding tot .NET developer.
+                </p>
+            </div>
+            <!-- Kolom 2: Links -->
+            <div class="col-md-2 offset-md-2">
+                <h6>Navigatie</h6>
+                <a href="index.html">Over mij</a>
+                <a href="ervaring.html">Ervaring</a>
+                <a href="hobbys.html">Hobby's</a>
+                <a href="curriculumVitae.html">CV</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <!-- Kolom 3: Gegevens -->
+            <div class="col-md-2">
+                <h6>Gegevens</h6>
+                <p style="font-size:0.85rem;">📍 Herentals, België</p>
+                <p style="font-size:0.82rem;">r0761517@student<br>.thomasmore.be</p>
+            </div>
+            <!-- Kolom 4: Socials -->
+            <div class="col-md-2">
+                <h6>Volg mij</h6>
+                <div class="d-flex gap-2 flex-wrap">
+                    <a href="https://github.com/FabioCretella123" target="_blank"
+                       class="social-icoon-link" title="GitHub">
+                        <i class="bi bi-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank"
+                       class="social-icoon-link" title="LinkedIn">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank"
+                       class="social-icoon-link" title="Instagram">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank"
+                       class="social-icoon-link" title="Twitter / X">
+                        <i class="bi bi-twitter-x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright text-center">
+            <p>&copy; 2025 Fabio Cretella — Graduaat Programmeren, Thomas More Hogeschool Lier</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="vendor/bootstrap.bundle.min.js"></script>
+</body>
+</html>

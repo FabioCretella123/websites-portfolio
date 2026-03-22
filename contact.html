@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacteer Fabio Cretella — stuur een bericht of neem direct contact op.">
+    <meta name="author" content="Fabio Cretella">
+    <title>Fabio Cretella | Contact</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="vendor/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Eigen stijlbestand -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
+</head>
+<body>
+
+<!-- ===== NAVIGATIE ===== -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="FC Logo" style="height:38px;"></a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+                aria-controls="navbarMenu" aria-expanded="false" aria-label="Navigatie uitklappen">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+                <li class="nav-item"><a class="nav-link" href="index.html">Over mij</a></li>
+                <li class="nav-item"><a class="nav-link" href="ervaring.html">Ervaring</a></li>
+                <li class="nav-item"><a class="nav-link" href="hobbys.html">Hobby's</a></li>
+                <li class="nav-item"><a class="nav-link" href="curriculumVitae.html">CV</a></li>
+                <li class="nav-item ms-lg-2"><a class="btn btn-accent active" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ===== PAGINA HEADER ===== -->
+<div class="container">
+    <div class="pagina-header">
+        <p class="sectie-label">Neem contact op</p>
+        <h1>Contact</h1>
+        <p>
+            Heb je een vraag, een stagevoorstel of wil je gewoon kennis maken?
+            Stuur gerust een bericht — ik antwoord zo snel mogelijk.
+        </p>
+    </div>
+</div>
+
+<!-- ===== HOOFDINHOUD ===== -->
+<main class="container pb-5" style="padding-bottom: 12rem;">
+    <div class="row g-4">
+
+        <!-- Contactformulier -->
+        <div class="col-lg-7">
+            <div class="contact-kaart">
+                <h2 style="font-size:1.2rem;font-weight:700;color:var(--kleur-wit);margin-bottom:1.5rem;">
+                    Stuur een bericht
+                </h2>
+
+                <!--
+                    Formulier verstuurd naar: https://tm-statweb.be/forms.php
+                    HTML5 validatie aanwezig op alle verplichte velden
+                -->
+                <form action="https://tm-statweb.be/forms.php" method="post" novalidate id="contactFormulier">
+
+                    <!-- Naam en voornaam (verplicht) -->
+                    <div class="row g-3 mb-0">
+                        <div class="col-sm-6">
+                            <div class="formulier-groep">
+                                <label for="voornaam">Voornaam <span style="color:var(--kleur-accent);">*</span></label>
+                                <input type="text"
+                                       id="voornaam"
+                                       name="voornaam"
+                                       class="form-control"
+                                       placeholder="Jouw voornaam"
+                                       required
+                                       minlength="2"
+                                       autocomplete="given-name">
+                                <div class="invalid-feedback">Voornaam is verplicht (min. 2 tekens).</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="formulier-groep">
+                                <label for="naam">Naam <span style="color:var(--kleur-accent);">*</span></label>
+                                <input type="text"
+                                       id="naam"
+                                       name="naam"
+                                       class="form-control"
+                                       placeholder="Jouw achternaam"
+                                       required
+                                       minlength="2"
+                                       autocomplete="family-name">
+                                <div class="invalid-feedback">Naam is verplicht (min. 2 tekens).</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- E-mailadres (verplicht + geldig) -->
+                    <div class="formulier-groep">
+                        <label for="email">E-mailadres <span style="color:var(--kleur-accent);">*</span></label>
+                        <input type="email"
+                               id="email"
+                               name="email"
+                               class="form-control"
+                               placeholder="voorbeeld@domein.com"
+                               required
+                               autocomplete="email">
+                        <div class="invalid-feedback">Voer een geldig e-mailadres in.</div>
+                    </div>
+
+                    <!-- Interesse in skills (selectielijst) -->
+                    <div class="formulier-groep">
+                        <label for="interesse">Interesse in skills</label>
+                        <select id="interesse" name="interesse" class="form-select">
+                            <option value="" disabled selected>Kies een onderwerp...</option>
+                            <option value="html-css">HTML &amp; CSS</option>
+                            <option value="bootstrap">Bootstrap</option>
+                            <option value="csharp-dotnet">C# / .NET</option>
+                            <option value="git-github">Git &amp; GitHub</option>
+                            <option value="stage">Stage / samenwerking</option>
+                            <option value="algemeen">Algemene vraag</option>
+                            <option value="anders">Iets anders</option>
+                        </select>
+                    </div>
+
+                    <!-- Vraag (groot tekstvak) -->
+                    <div class="formulier-groep">
+                        <label for="vraag">Vraag / bericht <span style="color:var(--kleur-accent);">*</span></label>
+                        <textarea id="vraag"
+                                  name="vraag"
+                                  class="form-control"
+                                  rows="6"
+                                  placeholder="Typ hier je bericht of vraag..."
+                                  required
+                                  minlength="10"></textarea>
+                        <div class="invalid-feedback">Vul een bericht in (min. 10 tekens).</div>
+                    </div>
+
+                    <!-- Verborgen velden voor het formulier -->
+                    <input type="hidden" name="subject" value="Contactformulier portfolio Fabio Cretella">
+                    <input type="hidden" name="redirect" value="index.html">
+
+                    <button type="submit" class="btn btn-accent w-100" style="padding:0.75rem;">
+                        <i class="bi bi-send me-2"></i>Verstuur bericht
+                    </button>
+
+                    <p style="font-size:0.75rem;color:var(--kleur-tekst-zacht);margin-top:0.8rem;text-align:center;">
+                        <i class="bi bi-shield-check me-1"></i>
+                        Velden met <span style="color:var(--kleur-accent);">*</span> zijn verplicht.
+                    </p>
+
+                </form>
+            </div>
+        </div>
+
+        <!-- Contactinfo sidebar -->
+        <div class="col-lg-5" style = "overflow: hidden;">
+            <div class="contact-link-kaart">
+                <h2 style="font-size:1.1rem;font-weight:700;color:var(--kleur-wit);margin-bottom:0.4rem;">
+                    Of bereik me via
+                </h2>
+                <p style="font-size:0.85rem;color:var(--kleur-tekst-zacht);margin-bottom:1.5rem;">
+                    Liever rechtstreeks? Hier vind je alle manieren om in contact te komen.
+                </p>
+
+                <a href="https://www.linkedin.com/in/fabiocretella" target="_blank" class="contact-link-item">
+                    <div class="contact-link-icoon"><i class="bi bi-linkedin"></i></div>
+                    <div>
+                        <div class="contact-link-naam">LinkedIn</div>
+                        <div class="contact-link-waarde">linkedin.com/in/fabiocretella</div>
+                    </div>
+                </a>
+
+                <a href="https://github.com/FabioCretella123" target="_blank" class="contact-link-item">
+                    <div class="contact-link-icoon"><i class="bi bi-github"></i></div>
+                    <div>
+                        <div class="contact-link-naam">GitHub</div>
+                        <div class="contact-link-waarde">github.com/FabioCretella123</div>
+                    </div>
+                </a>
+
+                <a href="mailto:r0761517@student.thomasmore.be" class="contact-link-item">
+                    <div class="contact-link-icoon"><i class="bi bi-envelope"></i></div>
+                    <div>
+                        <div class="contact-link-naam">E-mail</div>
+                        <div class="contact-link-waarde">r0761517@student.thomasmore.be</div>
+                    </div>
+                </a>
+
+                <a href="https://www.canva.com/design/DAFfPOvmOwI/BiZF2NES8v6WEZzn_ReYNw/view"
+                   target="_blank" class="contact-link-item">
+                    <div class="contact-link-icoon"><i class="bi bi-file-earmark-person"></i></div>
+                    <div>
+                        <div class="contact-link-naam">CV</div>
+                        <div class="contact-link-waarde">Bekijk mijn volledige cv</div>
+                    </div>
+                </a>
+
+                <a href="https://discord.com" target="_blank" class="contact-link-item">
+                    <div class="contact-link-icoon"><i class="bi bi-discord"></i></div>
+                    <div>
+                        <div class="contact-link-naam">Discord</div>
+                        <div class="contact-link-waarde">Beschikbaar op aanvraag</div>
+                    </div>
+                </a>
+
+            </div>
+
+            <!-- Locatie info -->
+            <div class="contact-link-kaart mt-4" style="padding:1.4rem;">
+                <p style="font-size:0.72rem;letter-spacing:3px;text-transform:uppercase;color:var(--kleur-accent);font-weight:600;margin-bottom:0.8rem;">
+                    Locatie
+                </p>
+                <p style="color:var(--kleur-tekst);font-weight:600;margin-bottom:0.3rem;">
+                    <i class="bi bi-geo-alt me-2" style="color:var(--kleur-accent);"></i>Herentals, Antwerpen
+                </p>
+                <p style="color:var(--kleur-tekst-zacht);font-size:0.83rem;margin-bottom:0;">
+                    België · Beschikbaar voor stage en freelance werk
+                </p>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <p class="footer-naam">Fabio Cretella</p>
+                <p class="footer-ondertitel">.NET Developer · Graduaat Programmeren</p>
+            </div>
+            <div class="col-md-2 offset-md-2">
+                <h6>Navigatie</h6>
+                <a href="index.html">Over mij</a>
+                <a href="ervaring.html">Ervaring</a>
+                <a href="hobbys.html">Hobby's</a>
+                <a href="curriculumVitae.html">CV</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="col-md-2">
+                <h6>Gegevens</h6>
+                <p style="font-size:0.85rem;">📍 Herentals, België</p>
+                <p style="font-size:0.82rem;">r0761517@student.thomasmore.be</p>
+            </div>
+            <div class="col-md-2">
+                <h6>Volg mij</h6>
+                <div class="d-flex gap-2 flex-wrap">
+                    <a href="https://github.com/FabioCretella123" target="_blank" class="social-icoon-link"><i class="bi bi-github"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank" class="social-icoon-link"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://www.instagram.com" target="_blank" class="social-icoon-link"><i class="bi bi-instagram"></i></a>
+                    <a href="https://twitter.com" target="_blank" class="social-icoon-link"><i class="bi bi-twitter-x"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center">
+            <p>&copy; 2025 Fabio Cretella — Graduaat Programmeren, Thomas More Hogeschool Lier</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="vendor/bootstrap.bundle.min.js"></script>
+
+<!-- HTML5 formuliervalidatie -->
+<script>
+(function () {
+    'use strict';
+    const form = document.getElementById('contactFormulier');
+    form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+    }, false);
+})();
+</script>
+
+</body>
+</html>

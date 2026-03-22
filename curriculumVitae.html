@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CV van Fabio Cretella — opleiding, werkervaring, taalkennis en skills.">
+    <meta name="author" content="Fabio Cretella">
+    <title>Fabio Cretella | CV</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="vendor/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Swiper (externe plug-in voor skills carousel) -->
+    <link rel="stylesheet" href="vendor/swiper-bundle.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Eigen stijlbestand -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
+</head>
+<body>
+
+<!-- ===== NAVIGATIE ===== -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="FC Logo" style="height:38px;"></a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+                aria-controls="navbarMenu" aria-expanded="false" aria-label="Navigatie uitklappen">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+                <li class="nav-item"><a class="nav-link" href="index.html">Over mij</a></li>
+                <li class="nav-item"><a class="nav-link" href="ervaring.html">Ervaring</a></li>
+                <li class="nav-item"><a class="nav-link" href="hobbys.html">Hobby's</a></li>
+                <li class="nav-item"><a class="nav-link active" href="curriculumVitae.html">CV</a></li>
+                <li class="nav-item ms-lg-2"><a class="btn btn-accent" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ===== PAGINA HEADER ===== -->
+<div class="container">
+    <div class="pagina-header">
+        <p class="sectie-label">Mijn achtergrond</p>
+        <h1>Curriculum Vitae</h1>
+        <p>Een overzicht van mijn opleiding, vaardigheden en ervaring. Wil je een volledige versie?</p>
+        <a href="https://www.canva.com/design/DAFfPOvmOwI/BiZF2NES8v6WEZzn_ReYNw/view"
+           target="_blank" class="btn btn-accent mt-3">
+            <i class="bi bi-file-earmark-person me-2"></i>Volledig CV bekijken
+        </a>
+    </div>
+</div>
+
+<!-- ===== HOOFDINHOUD ===== -->
+<main class="container pb-5">
+    <div class="row g-4">
+
+        <!-- Linkerkolom: Foto + Talen + Skills -->
+        <div class="col-lg-4">
+
+            <!-- Profielfoto -->
+            <div class="cv-blok text-center">
+                <img src="img/fotovanmij.jpeg" alt="Fabio Cretella" class="cv-profielfoto">
+                <h4 style="color:var(--kleur-wit);font-weight:700;margin-bottom:4px;">Fabio Cretella</h4>
+                <p style="color:var(--kleur-tekst-zacht);font-size:0.85rem;">.NET Developer · Student</p>
+                <div class="d-flex justify-content-center gap-2 mt-2">
+                    <a href="https://github.com/FabioCretella123" target="_blank" class="social-icoon-link">
+                        <i class="bi bi-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank" class="social-icoon-link">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                </div>
+                <hr style="border-color:var(--kleur-rand);margin:1.2rem 0;">
+                <p style="font-size:0.83rem;color:var(--kleur-tekst-zacht);">
+                    <i class="bi bi-geo-alt me-1" style="color:var(--kleur-accent);"></i>Herentals, België
+                </p>
+                <p style="font-size:0.83rem;color:var(--kleur-tekst-zacht);">
+                    <i class="bi bi-envelope me-1" style="color:var(--kleur-accent);"></i>r0761517@student.thomasmore.be
+                </p>
+            </div>
+
+            <!-- Talenkennis -->
+            <div class="cv-blok">
+                <p class="cv-blok-titel">Talen</p>
+
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between mb-1">
+                        <span style="font-size:0.85rem;color:var(--kleur-tekst);">Nederlands</span>
+                        <span style="font-size:0.75rem;color:var(--kleur-tekst-zacht);">Moedertaal</span>
+                    </div>
+                    <div class="taal-balk"><div class="taal-balk-vulling" style="width:100%;"></div></div>
+                </div>
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between mb-1">
+                        <span style="font-size:0.85rem;color:var(--kleur-tekst);">Engels</span>
+                        <span style="font-size:0.75rem;color:var(--kleur-tekst-zacht);">Gevorderd</span>
+                    </div>
+                    <div class="taal-balk"><div class="taal-balk-vulling" style="width:85%;"></div></div>
+                </div>
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between mb-1">
+                        <span style="font-size:0.85rem;color:var(--kleur-tekst);">Italiaans</span>
+                        <span style="font-size:0.75rem;color:var(--kleur-tekst-zacht);">Gevorderd</span>
+                    </div>
+                    <div class="taal-balk"><div class="taal-balk-vulling" style="width:80%;"></div></div>
+                </div>
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between mb-1">
+                        <span style="font-size:0.85rem;color:var(--kleur-tekst);">Spaans</span>
+                        <span style="font-size:0.75rem;color:var(--kleur-tekst-zacht);">Basiskennis</span>
+                    </div>
+                    <div class="taal-balk"><div class="taal-balk-vulling" style="width:40%;"></div></div>
+                </div>
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between mb-1">
+                        <span style="font-size:0.85rem;color:var(--kleur-tekst);">Frans</span>
+                        <span style="font-size:0.75rem;color:var(--kleur-tekst-zacht);">Basiskennis</span>
+                    </div>
+                    <div class="taal-balk"><div class="taal-balk-vulling" style="width:35%;"></div></div>
+                </div>
+                <div class="mb-0">
+                    <div class="d-flex justify-content-between mb-1">
+                        <span style="font-size:0.85rem;color:var(--kleur-tekst);">Chinees</span>
+                        <span style="font-size:0.75rem;color:var(--kleur-tekst-zacht);">Starter</span>
+                    </div>
+                    <div class="taal-balk"><div class="taal-balk-vulling" style="width:10%;"></div></div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Rechterkolom: Opleiding + Werkervaring + Technische vaardigheden -->
+        <div class="col-lg-8">
+
+            <!-- Opleiding -->
+            <div class="cv-blok">
+                <p class="cv-blok-titel"><i class="bi bi-mortarboard me-2"></i>Opleiding</p>
+
+                <div class="cv-item">
+                    <span class="cv-jaar">2026 – heden</span>
+                    <div class="cv-detail">
+                        <strong>Graduaat Programmeren</strong>
+                        <span>Thomas More Hogeschool, Lier</span>
+                    </div>
+                </div>
+                <div class="cv-item">
+                    <span class="cv-jaar">2024 – 2025</span>
+                    <div class="cv-detail">
+                        <strong>Se-n-se — Integrale Veiligheid</strong>
+                        <span>Richting: Bewaking & Beveiliging</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Werkervaring -->
+            <div class="cv-blok">
+                <p class="cv-blok-titel"><i class="bi bi-briefcase me-2"></i>Werkervaring</p>
+
+                <div class="cv-item">
+                    <span class="cv-jaar">2023 – heden</span>
+                    <div class="cv-detail">
+                        <strong>Bewakingsagent (weekendwerk)</strong>
+                        <span>Bewakingssector, België — beveiliging van evenementen en gebouwen</span>
+                    </div>
+                </div>
+                <div class="cv-item">
+                    <span class="cv-jaar">2024</span>
+                    <div class="cv-detail">
+                        <strong>Portfolio Website (Project 1)</strong>
+                        <span>Persoonlijk project — HTML5 &amp; CSS3, responsive design, GitHub Pages &amp; Combell</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technische vaardigheden -->
+            <div class="cv-blok">
+                <p class="cv-blok-titel"><i class="bi bi-code-slash me-2"></i>Technische vaardigheden</p>
+
+                <div class="cv-item">
+                    <span class="cv-jaar">Frontend</span>
+                    <div class="cv-detail">
+                        <span>HTML5, CSS3, Bootstrap 5</span>
+                    </div>
+                </div>
+                <div class="cv-item">
+                    <span class="cv-jaar">Backend</span>
+                    <div class="cv-detail">
+                        <span>.NET, C#</span>
+                    </div>
+                </div>
+                <div class="cv-item">
+                    <span class="cv-jaar">Tools</span>
+                    <div class="cv-detail">
+                        <span>Git, GitHub, Visual Studio, VS Code, FileZilla</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ===== SKILLS CAROUSEL (Swiper — externe plug-in) ===== -->
+    <!-- Swiper is een externe plug-in die min. 3 logo's tegelijk toont -->
+    <div class="swiper-carousel-wrapper mt-4">
+        <h4>Skills — Technologies</h4>
+
+        <div class="swiper skills-swiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <!-- HTML5 logo via SVG inline als fallback voor CDN -->
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                         alt="HTML5"
+                         onerror="this.src='';this.alt='HTML5';this.style.cssText='font-size:2rem;color:#e34f26;'">
+                    <p>HTML5</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                         alt="CSS3">
+                    <p>CSS3</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
+                         alt="Bootstrap">
+                    <p>Bootstrap</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"
+                         alt="C#">
+                    <p>C#</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg"
+                         alt=".NET">
+                    <p>.NET</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+                         alt="Git">
+                    <p>Git</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                         alt="GitHub"
+                         style="filter: invert(1) brightness(0.85);">
+                    <p>GitHub</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualstudio/visualstudio-original.svg"
+                         alt="Visual Studio">
+                    <p>Visual Studio</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"
+                         alt="VS Code">
+                    <p>VS Code</p>
+                </div>
+
+            </div>
+
+            <!-- Navigatieknoppen -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <!-- Paginering -->
+            <div class="swiper-pagination" style="position:static;margin-top:1rem;"></div>
+        </div>
+    </div>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <p class="footer-naam">Fabio Cretella</p>
+                <p class="footer-ondertitel">.NET Developer · Graduaat Programmeren</p>
+            </div>
+            <div class="col-md-2 offset-md-2">
+                <h6>Navigatie</h6>
+                <a href="index.html">Over mij</a>
+                <a href="ervaring.html">Ervaring</a>
+                <a href="hobbys.html">Hobby's</a>
+                <a href="curriculumVitae.html">CV</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="col-md-2">
+                <h6>Gegevens</h6>
+                <p style="font-size:0.85rem;">📍 Herentals, België</p>
+                <p style="font-size:0.82rem;">r0761517@student.thomasmore.be</p>
+            </div>
+            <div class="col-md-2">
+                <h6>Volg mij</h6>
+                <div class="d-flex gap-2 flex-wrap">
+                    <a href="https://github.com/FabioCretella123" target="_blank" class="social-icoon-link"><i class="bi bi-github"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank" class="social-icoon-link"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://www.instagram.com" target="_blank" class="social-icoon-link"><i class="bi bi-instagram"></i></a>
+                    <a href="https://twitter.com" target="_blank" class="social-icoon-link"><i class="bi bi-twitter-x"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center">
+            <p>&copy; 2025 Fabio Cretella — Graduaat Programmeren, Thomas More Hogeschool Lier</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="vendor/bootstrap.bundle.min.js"></script>
+<!-- Swiper JS (externe plug-in) -->
+<script src="vendor/swiper-bundle.min.js"></script>
+<script>
+    // Skills carousel: min. 3 logo's tegelijk zichtbaar (eis uit de opdracht)
+    const skillsSwiper = new Swiper('.skills-swiper', {
+        slidesPerView: 3,       // standaard 3 tegelijk zichtbaar
+        spaceBetween: 20,
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            // Vanaf 576px: 3 slides
+            576: { slidesPerView: 3 },
+            // Vanaf 768px: 4 slides
+            768: { slidesPerView: 4 },
+            // Vanaf 992px: 5 slides
+            992: { slidesPerView: 5 },
+        },
+    });
+</script>
+</body>
+</html>
